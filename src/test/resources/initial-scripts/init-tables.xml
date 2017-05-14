@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
+        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+	<changeSet id="init-tables-with-dummy-data-1" author="balazskovacs">
+		<insert tableName="USR_ALIAS">
+			<column name="USER_ID" value="1" />
+			<column name="USERNAME" value="dummyuserwithpassword"></column>
+		</insert>
+		
+		<insert tableName="USR_PASSWORD">
+			<column name="PASSWORD_ID" value="1"/>
+			<column name="USER_ID" value="1"/>
+			<column name="PASSWORD" value="dummypassword"/>
+		</insert>
+		
+		<insert tableName="USR_ROLES">
+			<column name="ROLE_ID" value="1"/>
+			<column name="USER_ID" value="1"/>
+		</insert>
+		
+		<insert tableName="USR_ROLES">
+			<column name="ROLE_ID" value="2"/>
+			<column name="USER_ID" value="1"/>
+		</insert>
+	</changeSet>
+</databaseChangeLog>
