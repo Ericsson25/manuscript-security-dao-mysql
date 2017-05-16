@@ -15,21 +15,14 @@
 		</developer>
 	</developers>
 
-	<properties>
-		<manuscript-security-general.version>0.0.1-SNAPSHOT</manuscript-security-general.version>
-		<manuscript-test.version>0.0.1-SNAPSHOT</manuscript-test.version>
-	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>manuscript.framework.security</groupId>
 			<artifactId>manuscript-security-general</artifactId>
-			<version>${manuscript-security-general.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>manuscript.test</groupId>
 			<artifactId>manuscript-test</artifactId>
-			<version>${manuscript-test.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
