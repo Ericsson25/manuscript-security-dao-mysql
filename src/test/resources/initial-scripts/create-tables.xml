@@ -3,8 +3,9 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 	
-	<include file="src/test/resources/initial-scripts/tables/role.xml" />
-	<include file="src/test/resources/initial-scripts/tables/usr_alias.xml" />
-	<include file="src/test/resources/initial-scripts/tables/usr_password.xml" />
-	<include file="src/test/resources/initial-scripts/tables/usr_roles.xml" />
+	<include file="liquibase/script/role.xml" />
+	<include file="liquibase/script/usr_alias.xml" />
+	<include file="liquibase/script/usr_password.xml" />
+	<include file="liquibase/script/usr_roles.xml" />
+	
 </databaseChangeLog>
